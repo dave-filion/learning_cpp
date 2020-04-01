@@ -96,9 +96,10 @@ int main() {
 
     // make LinkedList class
     auto *ll = new LinkedList;
-    ll->add_node(1);
-    ll->add_node(2);
-    ll->add_node(3);
+    for (int i = 0; i < 100; i++) {
+        ll->add_node(i);
+    }
+
     ll->print_list();
 
     return 0;
